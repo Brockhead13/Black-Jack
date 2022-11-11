@@ -7,7 +7,6 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 
-console.log()
 
 function getRandomCard() {
     return Math.floor( Math.random()*13 ) + 1
@@ -25,9 +24,8 @@ function startGame() {
     let firstCard = getRandomCard()
     let secondCard = getRandomCard()
     cards = [firstCard, secondCard]
-    sum = firstCard + secondCard
-
-    renderGame
+    sum = firstCard + secondCard    
+    renderGame()
 }
 
 function renderGame() {
@@ -49,6 +47,7 @@ messageEl.textContent= message
 
 function newCard() {
 
+if (isAlive === true && hasBlackJack === false) {}    
 let card = getRandomCard()
 sum += card
 cardsEl.push(card)
@@ -68,3 +67,36 @@ function rollDice() {
 }
 
 console.log( rollDice() )
+
+let hasSolvedChallenge = false
+let hasHintsLeft = false
+
+if (hasSolvedChallenge === false && hasHintsLeft === false) {
+    showSolutions()
+}
+
+function showSolutions() {
+    console.log(showSolutions)
+}
+
+let likesDocumentaries = true
+let likesStartups = false
+
+if (likesDocumentaries === true || likesStartups === true) {
+    recommendMovie()
+}
+
+function recommendMovie() {
+    console.log("Hey, check out this new film we think you will like!")
+}
+
+let airbnb = {
+    isSurroundedByALake: false,
+    location: Welcome Scotland,
+    kingSizeBedding: 189,
+    images: ["img/castle1.png", "img/castle2.png", "img/castle3.png"]
+
+}
+
+console.log(castle.location)
+console.log(castle.isSurroundedByALake)

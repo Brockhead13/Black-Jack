@@ -100,3 +100,17 @@ let airbnb = {
 
 console.log(castle.location)
 console.log(castle.isSurroundedByALake)
+
+let person = {
+    name: "Quinton",
+    age: 48,
+    country: United States of America
+}
+
+function logData() {
+    console.log(person.name + " is " + person.age + " years old and live in " + person.country)
+}
+
+logData()
+
+
